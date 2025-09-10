@@ -1,0 +1,116 @@
+/* Fondo gamer */
+body {
+  font-family: Arial, sans-serif;
+  background: radial-gradient(circle, #0f0c29, #302b63, #24243e);
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 20px;
+}
+
+h1, h2 {
+  text-shadow: 0 0 10px #00ffcc;
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  margin: 10px auto;
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #00ffaa;
+}
+
+button {
+  background: linear-gradient(135deg, #00ffcc, #00ffaa);
+  border: none;
+  padding: 10px 15px;
+  margin-top: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 0 8px #00ffcc;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+input {
+  width: 90%;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 6px;
+  border: none;
+}
+
+#tablero {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  gap: 5px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.celda {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #00ffcc, #00ffaa);
+  color: #000;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #00ffcc;
+  position: relative;
+}
+
+.celda.inicio {
+  background: linear-gradient(135deg, #ffcc00, #ffaa00);
+}
+
+.celda.fin {
+  background: linear-gradient(135deg, #ff0000, #cc0000);
+  color: #fff;
+}
+
+/* Fichas */
+.ficha {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 2px;
+}
+
+.ficha.j1 {
+  background: #00f;
+  left: 5px;
+}
+
+.ficha.j2 {
+  background: #f0f;
+  right: 5px;
+}
+
+/* Dado dinámico */
+#dadoVisual {
+  width: 60px;
+  height: 60px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  background: #fff;
+  color: #000;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00ffcc;
+}
