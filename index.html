@@ -7,7 +7,6 @@
 </head>
 <body>
   <div class="container">
-
     <h1>🏁 Carreras en Tablero</h1>
 
     <!-- Registro -->
@@ -23,7 +22,7 @@
       <h2>Iniciar Sesión</h2>
       <input type="email" id="logEmail" placeholder="Correo gamer">
       <input type="password" id="logPass" placeholder="Contraseña">
-      <button id="btnLogin">Login</button>
+      <button id="btnLogin">Iniciar</button>
     </div>
 
     <!-- Estado de usuario -->
@@ -38,6 +37,7 @@
       <button id="btnCrearPartida">Crear nueva partida</button>
       <p id="partidaInfo"></p>
       <p id="jugadoresInfo"></p>
+      <p id="turnoInfo"></p> <!-- 👈 indicador de turno -->
       <button id="btnRevancha" style="display:none;">Solicitar revancha</button>
       <button id="btnNuevaPartida" style="display:none;">Jugar de nuevo</button>
     </div>
@@ -56,24 +56,10 @@
       <div id="tablero"></div>
       <div id="dadoPanel">
         <button id="btnLanzarDado">🎲 Lanzar Dado</button>
+        <div id="dadoVisual"></div> <!-- 👈 dado dinámico -->
         <p id="resultadoDado"></p>
       </div>
     </div>
-
-  </div>
-
-  <script type="module" src="app.js"></script>
-</body>
-</html>
-<div class="card" id="board">
-      <h2>🎲 Tablero</h2>
-      <div id="tablero"></div>
-      <div id="dadoPanel">
-        <button id="btnLanzarDado">🎲 Lanzar Dado</button>
-        <p id="resultadoDado"></p>
-      </div>
-    </div>
-
   </div>
 
   <script type="module" src="app.js"></script>
